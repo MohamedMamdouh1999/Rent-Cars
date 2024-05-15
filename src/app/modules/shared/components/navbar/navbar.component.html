@@ -1,1 +1,35 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg fixed-top" [ngClass]="onWindowScroll()">
+     <div class="container">
+          <a class="navbar-brand d-flex align-items-center" routerLink="home">
+               <img loading="lazy" src="assets/images/logo.svg" alt="RENTCARS"/>
+               <span>RENTCARS</span>
+          </a>
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item">
+                         <a class="nav-link">Become a renter</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link">Rental deals</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link">How it work</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link me-0">Why choose us</a>
+                    </li>
+               </ul>
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item">
+                         <a class="nav-link">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link text-white d-flex align-items-center justify-content-center">Sign up</a>
+                    </li>
+               </ul>
+          </div>
+     </div>
+</nav>

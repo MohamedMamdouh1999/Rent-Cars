@@ -1,5 +1,17 @@
+:root {
+     --main-color: #1572D3;
+     --second-color: #484848;
+}
 * {
      margin: 0px;
      padding: 0px;
      box-sizing: border-box;
+}
+body {
+     font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 1400px) {
+     .container {
+          max-width: 90%;
+     }
 }
