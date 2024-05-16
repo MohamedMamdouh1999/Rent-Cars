@@ -7,9 +7,10 @@ import { Component, HostListener } from '@angular/core';
 })
 export class NavbarComponent {
   @HostListener('window: scroll', ['$event'])
+  @HostListener('window: resize', ['$event'])
   
   onWindowScroll(): string {
-    if (window.scrollY > 59) return 'bg-white mt-0';
+    if (window.scrollY > 59 || window.innerWidth < 992) return 'bg-white mt-0';
     else return 'bg-transparent';
   }
 }
