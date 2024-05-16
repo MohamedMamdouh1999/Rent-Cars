@@ -1,6 +1,7 @@
 :root {
      --main-color: #1572D3;
      --second-color: #484848;
+     --footer-color: #D6D6D6;
 }
 * {
      margin: 0px;
@@ -9,6 +10,11 @@
 }
 body {
      font-family: "Poppins", sans-serif;
+}
+a {
+     color: unset;
+     display: block;
+     text-decoration: none;
 }
 @media screen and (min-width: 1400px) {
      .container {

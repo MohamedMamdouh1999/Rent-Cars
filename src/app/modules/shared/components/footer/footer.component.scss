@@ -1,0 +1,78 @@
+footer {
+     padding-block: 20px;
+     background-color: #051C34;
+     .row > div {
+          div {
+               > img {
+                    width: 24px;
+                    height: 25.72px;
+               }
+               span {
+                    color: #FFF;
+                    font-weight: 600;
+                    margin-left: 8px;
+               }
+               &.social-media {
+                    margin-top: 16px;
+                    img {
+                         width: 24px;
+                         height: 24px;
+                         &:not(:first-of-type) {
+                              margin-left: 16px;
+                         }
+                    }
+               }
+          }
+          h6 {
+               color: #FFF;
+               font-weight: 500;
+          }
+          ul {
+               margin-top: 16px;
+               margin-bottom: 0px;
+               li {
+                    font-size: 14px;
+                    color: var(--footer-color);
+                    img {
+                         width: 24px;
+                         height: 24px;
+                         margin-right: 8px;
+                    }
+                    &:not(:first-of-type) {
+                         margin-top: 8px;
+                    }
+               }
+               &:first-of-type li:not(:first-of-type) {
+                    margin-top: 12px;
+               }
+          }
+     }
+     p {
+          font-size: 12px;
+          margin-top: 32px;
+          padding-top: 16px;
+          color: var(--footer-color);
+          border-top: 1px solid #575757;
+     }
+     @media screen and (min-width: 992px) {
+          & {
+               padding-block: 40px;
+               .social-media,
+               ul {
+                    margin-top: 32px;
+               }
+               ul {
+                    &:first-of-type li:not(:first-of-type) {
+                         margin-top: 24px;
+                    }
+                    li:not(:first-of-type) {
+                         margin-top: 16px;
+                    }
+               }
+               p {
+                    margin-top: 64px;
+                    padding-top: 32px;
+               }
+          }
+     }
+}
