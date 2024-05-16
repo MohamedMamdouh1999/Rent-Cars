@@ -1,0 +1,54 @@
+header {
+     .intro-details {
+          h1 {
+               font-size: 24px;
+               font-weight: 600;
+               color: #242424;
+               span {
+                    position: relative;
+                    color: var(--main-color);
+               }
+          }
+          h5 {
+               font-size: 18px;
+               color: #272727;
+               margin-block: 16px;
+          }
+          div img {
+               width: 123.75px;
+               height: 36.62px;
+               &:first-of-type {
+                    margin-right: 11.51px;
+               }
+          }
+     }
+     @media screen and (min-width: 992px) {
+          & {
+               height: 800px;
+               background-repeat: no-repeat;
+               background-position: right center, right top;
+               background-image: url(./../../../../../assets/images/intro-car.svg), url(./../../../../../assets/patterns/intro-pattern.svg);
+               .intro-details {
+                    width: 390px;
+                    height: 238.62px;
+                    h1 {
+                         font-size: 48px;
+                         span::before {
+                              content: "";
+                              top: 80%;
+                              right: 5px;
+                              width: 131.34px;
+                              height: 32.56px;
+                              position: absolute;
+                              background-size: contain;
+                              background-repeat: no-repeat;
+                              background-image: url(./../../../../../assets/icons/vector.svg);
+                         }
+                    }
+                    h5 {
+                         margin-block: 40px;
+                    }
+               }
+          }
+     }
+}
