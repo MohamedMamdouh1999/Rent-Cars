@@ -1,34 +1,34 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ErrorComponent } from './components/error/error.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from 'src/app/app-routing.module';
-
-const modules = [
-  BrowserModule,
-  AppRoutingModule
-];
+import { CarsGroupComponent } from './components/cars-group/cars-group.component';
+import { SingleCarComponent } from './components/single-car/single-car.component';
+import { RouterModule } from '@angular/router';
 
 const components = [
   NavbarComponent,
-  FooterComponent
+  FooterComponent,
+  CarsGroupComponent
 ];
 
 @NgModule({
   declarations: [
     ...components,
     ErrorComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SingleCarComponent
   ],
   imports: [
-    ...modules,
-    CommonModule
+    CommonModule,
+    RouterModule,
+    HttpClientModule
   ],
   exports: [
-    ...modules,
+    CommonModule,
     ...components
   ]
 })

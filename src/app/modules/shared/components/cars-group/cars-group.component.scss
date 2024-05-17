@@ -1,0 +1,46 @@
+section {
+     .intro-title {
+          span {
+               width: 226px;
+               height: 42px;
+               font-size: 14px;
+               font-weight: 500;
+               border-radius: 8px;
+               color: var(--main-color);
+               background-color: color-mix(in srgb, var(--main-color) 10%, #FFF);
+          }
+          h2 {
+               color: #333;
+               font-size: 18px;
+               font-weight: 500;
+               margin-top: 12px;
+               margin-bottom: 32px;
+          }
+     }
+     a {
+          width: 216px;
+          height: 48px;
+          padding: 8px;
+          margin-top: 64px;
+          border-color: #E0E0E0 !important;
+          span {
+               font-size: 14px;
+               font-weight: 500;
+               color: #4E4E4E;
+               margin-right: 8px;
+          }
+          img {
+               width: 20px;
+               height: 20px;
+          }
+     }
+     @media screen and (min-width: 992px) {
+          & {
+               .intro-title h2 {
+                    font-size: 38px;
+                    margin-top: 24px;
+                    margin-bottom: 64px;
+               }
+          }
+     }
+}

@@ -1,0 +1,15 @@
+<section>
+     <div class="intro-title text-center">
+          <span class="mx-auto d-flex align-items-center justify-content-center">POPULAR RENTAL DEALS</span>
+          <h2>Most popular cars rental deals</h2>
+     </div>
+     <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gy-5">
+          <div class="col" *ngFor="let car of cars">
+               <app-single-car [car]="car"></app-single-car>
+          </div>
+     </div>
+     <a routerLink="/all-cars" class="btn shadow-none mx-auto d-flex align-items-center justify-content-center">
+          <span>Show all vehicles</span>
+          <img loading="lazy" src="assets/icons/arrow-right.svg" alt="Rent Cars">
+     </a>
+</section>
