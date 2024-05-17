@@ -1,4 +1,13 @@
 header {
+     .intro-logo-mobile {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: right top;
+          background-image: url(./../../../../../assets/patterns/intro-pattern.svg);
+          img {
+               width: 95%;
+          }
+     }
      .intro-details {
           h1 {
                font-size: 24px;
@@ -27,7 +36,7 @@ header {
                height: 800px;
                background-repeat: no-repeat;
                background-position: right center, right top;
-               background-image: url(./../../../../../assets/images/intro-car.svg), url(./../../../../../assets/patterns/intro-pattern.svg);
+               background-image: url(./../../../../../assets/images/intro-car.png), url(./../../../../../assets/patterns/intro-pattern.svg);
                .intro-details {
                     width: 390px;
                     height: 238.62px;
@@ -49,6 +58,11 @@ header {
                          margin-block: 40px;
                     }
                }
+          }
+     }
+     @media screen and (min-width: 992px) and (max-width: 1200px) {
+          & {
+               background-size: 55%;
           }
      }
 }
