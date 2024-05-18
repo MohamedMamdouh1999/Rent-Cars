@@ -1,0 +1,87 @@
+section {
+     padding-block: 40px;
+     h4 {
+          font-size: 24px;
+          font-weight: 500;
+          color: #959595;
+          margin-bottom: 20px;
+          a {
+               color: var(--main-color);
+          }
+     }
+     .intro-logo-mobile {
+          margin-block: 24px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-image: url(./../../../../../assets/patterns/car-pattern.svg);
+          img {
+               width: 95%;
+          }
+     }
+     .container {
+          .intro-title {
+               span {
+                    width: 181px;
+                    height: 42px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border-radius: 8px;
+                    color: var(--main-color);
+                    background-color: color-mix(in srgb, var(--main-color) 10%, #FFF);
+               }
+               h2 {
+                    color: #333;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 16px;
+                    margin-bottom: 24px;
+               }
+          }
+          ul li {
+               img {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 4px;
+               }
+               i {
+                    font-size: 18px;
+                    color: #959595;
+                    margin-right: 6px;
+               }
+               span {
+                    display: block;
+                    color: #959595;
+               }
+               &:not(:first-of-type) {
+                    margin-top: 10px;
+               }
+          }
+     }
+     @media screen and (min-width: 1200px) {
+          & {
+               height: 100vh;
+               padding-block: 0px;
+               background-repeat: no-repeat;
+               background-size: auto, contain;
+               background-position: left center;
+               background-image: url(./../../../../../assets/images/car-bg.svg), url(./../../../../../assets/patterns/car-pattern.svg);
+               h4 {
+                    font-size: 32px;
+                    margin-block: 40px;
+               }
+               .container > div {
+                    width: 576px;
+                    padding-block: 100px;
+                    .intro-title h2 {
+                         font-size: 38px;
+                         margin-top: 32px;
+                         margin-bottom: 80px;
+                    }
+                    ul li:not(:first-of-type) {
+                         margin-top: 13px;
+                    }
+               }
+          }
+     }
+}

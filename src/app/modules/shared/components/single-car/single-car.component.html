@@ -3,7 +3,7 @@
           <img *ngSwitchCase="1" loading="lazy" src="assets/images/jaguar.svg" alt="Rent Cars">
           <img *ngSwitchCase="2" loading="lazy" src="assets/images/audi.png" alt="Rent Cars">
           <img *ngSwitchCase="3" loading="lazy" src="assets/images/bmw.svg" alt="Rent Cars">
-          <img *ngSwitchCase="4" loading="lazy" src="assets/images/lamborghini.svg" alt="Rent Cars">
+          <img *ngSwitchDefault loading="lazy" src="assets/images/lamborghini.svg" alt="Rent Cars">
      </ng-container>
      <h6>{{car.make}} {{car.model}}</h6>
      <div class="car-rate d-flex align-items-center">
@@ -15,7 +15,7 @@
           <ul class="list-unstyled mb-2 mb-sm-0">
                <li class="d-flex align-items-center">
                     <img loading="lazy" src="assets/icons/user.svg" alt="Rent Cars">
-                    <span class="d-block">4 Passagers</span>
+                    <span class="d-block">{{car.owners}} Passagers</span>
                </li>
                <li class="d-flex align-items-center">
                     <img loading="lazy" src="assets/icons/air.svg" alt="Rent Cars">
@@ -29,7 +29,7 @@
                </li>
                <li class="d-flex align-items-center">
                     <img loading="lazy" src="assets/icons/door.svg" alt="Rent Cars">
-                    <span class="d-block">4 Doors</span>
+                    <span class="d-block">{{car.owners * 2}} Doors</span>
                </li>
           </ul>
      </div>
@@ -42,7 +42,7 @@
           </div>
      </div>
      <a [routerLink]="['/car', car.id]" routerLinkActive="router-link-active"  class="btn shadow-none border-0 text-white w-100 d-flex align-items-center justify-content-center">
-          <span>Rent Now</span>
+          <span>View Details</span>
           <span class="icon-mask" style="mask-image: url(./../../../../../assets/icons/arrow-right.svg);"></span>
      </a>
 </article>

@@ -1,1 +1,48 @@
-<p>car works!</p>
+<section>
+     <h4 class="container d-flex align-items-center">
+          <a routerLink="/home">Home</a>/
+          <a routerLink="/all-cars">Cars</a>
+          /{{car.make}} {{car.model}}
+     </h4>
+     <div class="intro-logo-mobile d-xl-none d-flex align-items-start justify-content-start py-5">
+          <img loading="lazy" src="assets/images/car-bg.svg" alt="Rent Cars">
+     </div>
+     <div class="container h-100 d-flex align-items-center justify-content-xl-end">
+          <div>
+               <div class="intro-title">
+                    <span class="d-flex align-items-center justify-content-center">WHY CHOOSE US</span>
+                    <h2>We offer the best experience with our rental deals</h2>
+               </div>
+               <ul class="list-unstyled">
+                    <li *ngFor="let feature of car.features" class="d-flex align-items-center">
+                         <img loading="lazy" src="assets/icons/air.svg" alt="Rent Cars">
+                         <span>{{feature}}</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <img loading="lazy" src="assets/icons/user.svg" alt="Rent Cars">
+                         <span>{{car.owners}} Passagers</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <img loading="lazy" src="assets/icons/auto.svg" alt="Rent Cars">
+                         <span>{{car.transmission}}</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <i class="fa-solid fa-calendar-days"></i>
+                         <span>{{car.year}}</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <img loading="lazy" src="assets/icons/door.svg" alt="Rent Cars">
+                         <span>{{car.owners * 2}} Doors</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <i class="fa-solid fa-palette"></i>
+                         <span>{{car.color}}</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                         <i class="fa-solid fa-gas-pump"></i>
+                         <span>{{car.fuelType}}</span>
+                    </li>
+               </ul>
+          </div>
+     </div>
+</section>
