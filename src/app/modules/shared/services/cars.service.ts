@@ -7,9 +7,9 @@ import { ICar } from '../interfaces/icar';
   providedIn: 'root'
 })
 export class CarsService {
-  private apiClient: string = "https://freetestapi.com/api/v1/cars";
+  private readonly apiClient: string = "https://freetestapi.com/api/v1/cars";
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   getLimitCars(limit: number): Observable<ICar[]> {
     return this.httpClient.get<ICar[]>(`${this.apiClient}?limit=${limit}`);

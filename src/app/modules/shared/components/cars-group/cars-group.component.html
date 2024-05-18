@@ -8,7 +8,7 @@
                <app-single-car [car]="car"></app-single-car>
           </div>
      </div>
-     <a routerLink="/all-cars" class="btn shadow-none mx-auto d-flex align-items-center justify-content-center">
+     <a *ngIf="cars.length <= 4" routerLink="/all-cars" class="btn shadow-none mx-auto d-flex align-items-center justify-content-center">
           <span>Show all vehicles</span>
           <img loading="lazy" src="assets/icons/arrow-right.svg" alt="Rent Cars">
      </a>

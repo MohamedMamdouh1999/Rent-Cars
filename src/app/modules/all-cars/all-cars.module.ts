@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
 import { AllCarsRoutingModule } from './all-cars-routing.module';
 import { AllCarsComponent } from './components/all-cars/all-cars.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     AllCarsComponent
   ],
   imports: [
-    CommonModule,
-    AllCarsRoutingModule
+    AllCarsRoutingModule,
+    SharedModule
   ]
 })
 export class AllCarsModule { }
