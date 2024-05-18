@@ -8,8 +8,27 @@
                <app-single-car [car]="car"></app-single-car>
           </div>
      </div>
-     <a *ngIf="cars.length <= 4" routerLink="/all-cars" class="btn shadow-none mx-auto d-flex align-items-center justify-content-center">
+     <a *ngIf="cars.length <= 4; else carsPagination" routerLink="/all-cars" class="btn shadow-none mx-auto d-flex align-items-center justify-content-center">
           <span>Show all vehicles</span>
           <img loading="lazy" src="assets/icons/arrow-right.svg" alt="Rent Cars">
      </a>
+     <ng-template #carsPagination>
+          <ul class="pagination d-flex align-items-center justify-content-center">
+               <li>
+                    <a>Previous</a>
+               </li>
+               <li>
+                    <a>1</a>
+               </li>
+               <li>
+                    <a>2</a>
+               </li>
+               <li>
+                    <a>3</a>
+               </li>
+               <li>
+                    <a>Next</a>
+               </li>
+          </ul>
+     </ng-template>
 </section>

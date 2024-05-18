@@ -17,7 +17,7 @@ section {
                margin-bottom: 32px;
           }
      }
-     a {
+     > a {
           width: 216px;
           height: 48px;
           padding: 8px;
@@ -34,12 +34,39 @@ section {
                height: 20px;
           }
      }
+     .pagination {
+          margin-top: 75px;
+          li {
+               display: flex;
+               padding: 10px;
+               align-items: center;
+               justify-content: center;
+               border: 1px solid #E0E2E7;
+               background-color: #F7F8F9;
+               a {
+                    font-size: 14px;
+                    color: #1D2939;
+               }
+               &:first-of-type {
+                    border-radius: 4px 0px 0px 4px;
+               }
+               &:last-of-type {
+                    border-radius: 0px 4px 4px 0px;
+               }
+          }
+     }
      @media screen and (min-width: 992px) {
           & {
                .intro-title h2 {
                     font-size: 38px;
                     margin-top: 24px;
                     margin-bottom: 64px;
+               }
+               .pagination {
+                    margin-top: 150px;
+                    li {
+                         padding: 10px 16px;
+                    }
                }
           }
      }

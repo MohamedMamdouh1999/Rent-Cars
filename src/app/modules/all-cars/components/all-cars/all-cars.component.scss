@@ -1,0 +1,22 @@
+section {
+     padding-block: 40px;
+     h4 {
+          font-size: 24px;
+          font-weight: 500;
+          color: #959595;
+          margin-bottom: 20px;
+          a {
+               color: var(--main-color);
+          }
+     }
+     @media screen and (min-width: 992px) {
+          & {
+               padding-top: 76px;
+               padding-bottom: 98px;
+               h4 {
+                    font-size: 32px;
+                    margin-bottom: 42px;
+               }
+          }
+     }
+}
