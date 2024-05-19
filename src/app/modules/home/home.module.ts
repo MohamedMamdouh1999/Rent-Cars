@@ -6,6 +6,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     FooterComponent,
     HeaderComponent,
-    PopularCarsRentalComponent
+    PopularCarsRentalComponent,
+    HowItWorksComponent
   ],
   imports: [
     HomeRoutingModule,
