@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
     FooterComponent,
     HeaderComponent,
     PopularCarsRentalComponent,
-    HowItWorksComponent
+    HowItWorksComponent,
+    WhyChooseUsComponent
   ],
   imports: [
     HomeRoutingModule,
