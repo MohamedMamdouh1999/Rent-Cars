@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
+import { DownloadAppComponent } from './components/download-app/download-app.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.c
     HeaderComponent,
     PopularCarsRentalComponent,
     HowItWorksComponent,
-    WhyChooseUsComponent
+    WhyChooseUsComponent,
+    DownloadAppComponent
   ],
   imports: [
     HomeRoutingModule,

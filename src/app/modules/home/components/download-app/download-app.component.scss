@@ -1,0 +1,78 @@
+section article {
+     &:first-of-type {
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: left center;
+          background-image: url(./../../../../../assets/patterns/car-pattern.svg);
+          h2 {
+               font-size: 24px;
+               font-weight: 600;
+               span {
+                    color: var(--main-color);
+               }
+          }
+          p {
+               color: #3E3E3E;
+               margin-block: 20px;
+          }
+          div img:first-of-type {
+               margin-right: 16.26px;
+          }
+          form {
+               margin-block: 24px;
+               input {
+                    height: 28px;
+                    padding: 20px 32px 17px;
+                    background-color: #CEDCFF;
+                    &:not(:first-of-type) {
+                         margin-top: 14px;
+                    }
+               }
+               button {
+                    width: 100px;
+                    height: 36px;
+                    margin-top: 22px;
+                    font-weight: 500;
+                    background-color: var(--main-color);
+               }
+          }
+     }
+     @media screen and (min-width: 1200px) {
+          & {
+               &:first-of-type {
+                    padding-left: 79px;
+                    background-position: left bottom;
+                    h2 {
+                         width: 480px;
+                         font-size: 48px;
+                    }
+                    p {
+                         margin-block: 40px;
+                    }
+                    div img {
+                         width: 174.87px;
+                         height: 51.74px;
+                    }
+                    form {
+                         width: 374px;
+                         margin-top: 64.26px;
+                         margin-bottom: 55px;
+                         input {
+                              width: 374px;
+                              height: 56px;
+                         }
+                         button {
+                              width: 159px;
+                              height: 48px;
+                         }
+                    }
+               }
+               &:last-of-type {
+                    padding-right: 80.78px;
+                    img {
+                         width: 520.22px;
+                    }
+               }
+          }
+     }
+}
