@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
 import { DownloadAppComponent } from './components/download-app/download-app.component';
+import { WhatPeopleSayComponent } from './components/what-people-say/what-people-say.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DownloadAppComponent } from './components/download-app/download-app.com
     PopularCarsRentalComponent,
     HowItWorksComponent,
     WhyChooseUsComponent,
-    DownloadAppComponent
+    DownloadAppComponent,
+    WhatPeopleSayComponent
   ],
   imports: [
     HomeRoutingModule,
